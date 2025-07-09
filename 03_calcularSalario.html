@@ -41,8 +41,12 @@
     else if (salario > 4000 && salario < 7000) {
         alert(`Seu sálario com o reajuste ficará ${aum75F}, o aumento será de R$${aum75}`)
     }
-    else {
+    else if (salario > 7000) {
         alert(`Seu sálario com o reajuste ficará ${aum5F}, o aumento será de R$${aum5}`)
+    }
+
+    else {
+        alert(`Valor inválido`)
     }
 
     

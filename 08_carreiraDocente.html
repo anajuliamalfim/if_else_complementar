@@ -19,9 +19,37 @@
     */
 
     //ENTRADA
+    let carreira = Number(prompt('Quantos anos você tem de carreira?'));
+    let projetosP = Number(prompt('Informe a quantia de Projetos de Pesquisa  ja coordenou?'));
+    let ProjetosE = Number(prompt('Informe quantos Projetos de Extensão já orientou'));
+    let tccs = Number(prompt('Informe quantos TCCs já orientou'));
 
 
     //PROCESSAMENTO
+    carreira = 2.5
+    projetosP = 5
+    ProjetosE = 5
+    tccs = 3
+
+    const pontos = carreira + projetosP + ProjetosE + tccs
+
+    if (pontos <= 30) {
+        alert(`CONVIDADO`)
+    }
+
+    else if (pontos > 30 && pontos <= 50) {
+        alert(`AGREGADO`)
+    }
+    
+    else if (pontos > 50) {
+        alert(`TITULAR`)
+    }
+
+    else {
+        alert(`Valor inválido`)
+    }
+
+    
 
     
     //SAÍDA

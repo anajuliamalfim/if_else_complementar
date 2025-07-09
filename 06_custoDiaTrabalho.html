@@ -20,7 +20,7 @@
 
 
     //PROCESSAMENTO
-    let salario = viagens * 100
+    let salario = 100
     
     const adic20 = salario + ((salario * 20)/100)
     const adic35 = salario + ((salario * 35)/100)
@@ -39,8 +39,12 @@
         alert(`Seu sálario não terá alteração`)
     }
 
-    else {
+    else if (cargo == "C" && viagens > 10){
         alert(`Seu sálario terá um aumento de 10%, ficando R$${adic10}`)
+    }
+
+    else {
+        alert(`Valor inválido`)
     }
 
 

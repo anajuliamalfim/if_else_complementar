@@ -18,9 +18,18 @@
     //PROCESSAMENTO
     anos = anos * 12
     const prestação = valorI / anos
+    salario = salario + ((salario * 30)/100)
 
     if (prestação > salario) {
-        alert(``)
+        alert(`O valor da prestação é R$${prestação}, foi aceito o financiamento`)
+    }
+
+    else if (prestação >= salario) {
+        alert(`O valor da prestação é R$${prestação}, não foi aceito o financiamento`)
+    }
+
+    else {
+        alert(`Valor inválido`)
     }
 
 

@@ -12,9 +12,26 @@
     */
 
     //ENTRADA
+    const aereoSP = Number(prompt('Informe o valor do transporte aéreo para SP'));
+    const aereoRJ = Number(prompt('Informe o valor do transporte aéreo para RJ'));
+    const hotelSP = Number(prompt('Informe o valor do hotel para SP'))
+    const hotelRJ = Number(prompt('Informe o valor do hotel para RJ'))
+
+    const custoSP = aereoSP + hotelSP
+    const custoRJ = aereoRJ + hotelRJ
+
+
 
 
     //PROCESSAMENTO
+    if (custoRJ < custoSP) {
+        alert(`A melhor decisão para viajar é RJ pelo custo ser menor, sendo de R$${custoRJ}!`);
+    }
+
+    else {
+        alert(`A melhor decisão para viajar é SP pelo custo ser menor, sendo de R$${custoSP}!!`);
+
+    }
 
     
     //SAÍDA
