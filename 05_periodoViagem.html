@@ -11,9 +11,28 @@
     */
 
     //ENTRADA
+    const distancia = Number(prompt('Informe a distância da viagem em km'))
+    const kmdia = Number(prompt('Quantos kms você pretende viajar por dia?'))
 
 
     //PROCESSAMENTO
+    const diasNesc = distancia/kmdia
+
+    if (diasNesc <= 3) {
+        alert(`Qualquer Período`)
+    }
+
+    else if (diasNesc > 3 && diasNesc <= 10) {
+        alert(`Férias de Julho`)
+    }
+
+    else if (diasNesc > 10 && diasNesc <= 20) {
+        alert(`Férias de Verão`)
+    }
+
+    else {
+        alert(`Deverá Trabalhar Remoto, a viagem durará ${diasNesc} dias`)
+    }
 
     
     //SAÍDA

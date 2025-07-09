@@ -15,9 +15,34 @@
     */
 
     //ENTRADA
+    const viagens = Number(prompt('Quantas viagens foram realizadas no dia?'))
+    const cargo = (prompt('Qual seu cargo? (M - motorista / C - cobrador)'))
 
 
     //PROCESSAMENTO
+    let salario = viagens * 100
+    
+    const adic20 = salario + ((salario * 20)/100)
+    const adic35 = salario + ((salario * 35)/100)
+    const adic10 = salario + ((salario * 10)/100)
+
+
+    if (cargo == "M" && viagens <= 10) {
+        alert(`Seu sálario terá um aumento de 20%, ficando R$${adic20}`)
+    }
+
+    else if (cargo == "M" && viagens > 10) {
+        alert(`Seu sálario terá um aumento de 35%, ficando R$${adic35}`)
+    }
+
+    else if (cargo == "C" && viagens <= 10) {
+        alert(`Seu sálario não terá alteração`)
+    }
+
+    else {
+        alert(`Seu sálario terá um aumento de 10%, ficando R$${adic10}`)
+    }
+
 
     
     //SAÍDA

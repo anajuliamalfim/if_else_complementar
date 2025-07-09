@@ -10,9 +10,20 @@
     */
 
     //ENTRADA
+    const valorI = Number(prompt('Informe o valor do imóvel'));
+    let anos = Number(prompt('Em quantos anos será realizado o financiamento?'))
+    const salario = Number(prompt('Informe seu sálario'))
 
 
     //PROCESSAMENTO
+    anos = anos * 12
+    const prestação = valorI / anos
+
+    if (prestação > salario) {
+        alert(``)
+    }
+
+
 
     
     //SAÍDA
